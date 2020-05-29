@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+
+<html>
+    <h1>JavaScript Introduction</h1>
+<main id="main-doc">
+    <section class="main-section"  id="Change-HTML-Content">
+        <header>
+            <h2>JavaScript Can Change HTML Content</h2>
+        </header>
+        <p>One of many JavaScript HTML methods is getElementById().</p>
+        
+        <p>This example uses the method to "find" an HTML element (with id="demo") and changes the element content (innerHTML) to "Hello JavaScript":</p>
+        <h3 id="ex">example</h3>
+        <code id="code">document.getElementById("demo").innerHTML = "Hello JavaScript";</code>
+    </section>
+    <section class="main-section"  id="Change-HTML-Styles">
+        <header>
+            <h2>JavaScript Can Change HTML Styles (CSS)
+            </h2>
+        </header>
+        <p>Changing the style of an HTML element, is a variant of changing an HTML attribute:</p>
+        <h3 id="ex">example</h3>
+        <code id="code">document.getElementById("demo").style.fontSize = "35px";
+        </code>
+    </section>
+    <section class="main-section"  id="Hide-HTML-Elements">
+        <header>
+            <h2>JavaScript Can Hide HTML Elements
+            </h2>
+        </header>
+        <p>Hiding HTML elements can be done by changing the display style:
+        </p>
+        <h3 id="ex">example</h3>
+        <code id="code">document.getElementById("demo").style.display = "none";
+        </code>
+    </section>
+    <section class="main-section"  id="Show-HTML-Elements">
+        <header>
+            <h2>JavaScript Can Show HTML Elements
+            </h2>
+        </header>
+        <p>Showing hidden HTML elements can also be done by changing the display style:
+        </p>
+        <h3 id="ex">example</h3>
+        <code id="code">document.getElementById("demo").style.display = "block";
+        </code>
+    </section>
+    <section class="main-section"  id="Commonly-Asked-Questions">
+        <header>
+            <h2>Commonly Asked Questions
+            </h2>
+        </header>
+        <ul>
+            <li>How do I get JavaScript?
+            </li>
+            <li>Where can I download JavaScript?
+            </li>
+            <li>Is JavaScript Free?
+            </li>
+        </ul>
+        <p>You don't have to get or download JavaScript.</p>
+        <p>JavaScript is already running in your browser on your computer, on your tablet, and on your smart-phone. Free to use for everyone.</p>
+
+    </section>
+</main>
+
+<nav id="navbar">
+    <header>JavaScript Introduction
+    </header>
+    <ul>
+        <li><a class="nav-link" href="#Change-HTML-Content">Change HTML Content</a></li>
+        <li><a class="nav-link" href="#Change-HTML-Styles">Change HTML Styles</a></li>
+        <li><a class="nav-link" href="#Hide-HTML-Elements">Hide-HTML-Elements</a></li>
+        <li><a class="nav-link" href="#Show-HTML-Elements">Show-HTML-Elements</a></li>
+        <li><a class="nav-link" href="#Commonly-Asked-Questions">Commonly-Asked-Questions</a></li>
+    </ul>
+</nav>
+
+</html>
+<style>
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+    code{
+        display: block;
+  text-align: left;
+  position: relative;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 5px;}
+
+p{color:rgb(82, 82, 82)}
+
+</style>
