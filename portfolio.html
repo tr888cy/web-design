@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+
+    <!-- NAV-BAR -->
+    <nav-bar id="navbar">
+        <!-- User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page. -->
+        <ul class="nav-list">
+            <li>
+            <a href="#welcome-section">About</a>
+            </li>
+            <li>
+            <a href="#projects">Work</a>
+            </li>
+            <li>
+            <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <!-- User Story #11: The navbar should always be at the top of the viewport. -->
+    </nav-bar>
+
+    <!-- welcome-section -->
+    <section id="welcome-section">
+        <!-- User Story #10: The height of the welcome section should be equal to the height of the viewport. -->
+        <h1>Hello, I am Sze Ting</h1>
+        <p>an architect/web designer/photographer</p>
+    </section>
+
+    <!-- projects -->
+    <section id="projects">
+        <h2>here are some of my projects</h2>
+
+        <section class="project-grid">
+            <!-- project 1 -->
+            <section class='project-tile' id="name1">
+                 <a
+                 href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+                 target="_blank"
+                 class="project project-tile">
+                 <img
+                  class="project-image"
+                  src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+                  alt="project"/>
+                  <p class="project-title">
+                    Tribute Page</p>
+                 </a>
+            </section>
+
+            <!-- project 2 -->
+            <section class='project-tile' id="name1">
+                 <a
+                 href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+                 target="_blank"
+                 class="project project-tile">
+                 <img
+                  class="project-image"
+                  src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+                  alt="project"/>
+                  <p class="project-title">
+                    Tribute Page</p>
+                 </a>
+            </section>
+
+            <!-- project 3 -->
+            <section class='project-tile' id="name1">
+                <a
+                href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+                target="_blank"
+                class="project project-tile">
+                <img
+                 class="project-image"
+                 src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+                 alt="project"/>
+                 <p class="project-title">
+                    Tribute Page</p>
+                </a>
+            </section>
+
+            <!-- project 4 -->
+            <section class='project-tile' id="name1">
+                <a
+                href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+                target="_blank"
+                class="project project-tile">
+                <img
+                 class="project-image"
+                 src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+                 alt="project"/>
+                <p class="project-title">
+                 Tribute Page</p>
+                </a>
+            </section>
+
+        </section>
+
+    </section>
+
+    <!-- contract link -->
+    <section id="profile-link">
+        <!-- User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab. -->
+        <h2>Let's work together...</h2>
+        <p>How do you take your coffee?</p>
+        <!-- CONTRACT -->
+        <div class="contact-links" id="contact">
+            <!-- GitHub -->
+            <a
+            href="https://facebook.com/freecodecamp"
+            target="_blank"
+            class="btn"
+            >
+            GitHub</a>
+
+            <!-- facebook -->
+            <a
+            href="https://facebook.com/freecodecamp"
+            target="_blank"
+            class="btn"
+            >
+            Facebook</a>
+
+            <!-- linkedin -->
+            <a
+            href="https://facebook.com/freecodecamp"
+            target="_blank"
+            class="btn"
+            >
+            Linkedin</a>
+
+            <!-- mail -->
+            <a href="mailto:SZETINGCHAN2020@OUTLOOK.com" class="btn">
+            Send a mail</a>
+
+            <!-- phone -->
+            <a href="tel:555-555-5555" class="btn">
+            Call me</a>
+
+        </div>
+
+    </section>
+
+</html>
+
+<style>
+/* color control */
+    :root {
+        --head-text: #F7EDDA;
+        --main-text: #4F7670;
+        --main-section: #92BEA9;
+        --main-bg: #C5DEDA;
+
+        --main-c4: #9CB4D4;
+        --main-c2: #659F7C;
+        }
+/* welcome-section */
+    h1{
+        color:var(--head-text);
+    }
+    #welcome-section>p{
+        color:var(--head-text);
+    }
+    #welcome-section{
+        background-color:var(--main-text) ;
+        text-align: center;
+    }
+/* body-section */
+    html{
+        background-color: var(--main-bg);
+    }
+    .project-grid {        
+        display: grid;
+        grid-template-columns:repeat(3, minmax(320px, 1fr)); 
+        grid-gap: 20px;
+        }
+    .project-tile{
+        background-color: var(--main-section);
+    }
+    .project-tile>img{
+        display:block;
+        margin:auto;
+        width:100%;
+        height:auto;
+    }
+    .project-title{
+        text-align: center;
+        color: var(--main-text);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media */
+    
+    @media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+</style>
